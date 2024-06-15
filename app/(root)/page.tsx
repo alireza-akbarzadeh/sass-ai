@@ -1,6 +1,5 @@
-import { Container, Grid } from "@radix-ui/themes"
+import { Text } from "@radix-ui/themes"
 import { Metadata } from "next"
-import { Button } from "../components/Button"
 
 export const metadata: Metadata = {
   title: "Sass Ai Application",
@@ -22,19 +21,10 @@ export const metadata: Metadata = {
 
 export default function Web() {
   return (
-    <>
+    <main>
       <section>
-        <Container size="3">
-          <Grid columns="3" gap="3" rows="repeat(2, 64px)" width="auto">
-            <Button />
-            <Button />
-            <Button />
-            <Button />
-            <Button />
-            <Button />
-          </Grid>
-        </Container>
+        <Text as="p"> test</Text>
       </section>
-    </>
+    </main>
   )
 }
